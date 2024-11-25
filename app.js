@@ -1,9 +1,5 @@
 let selector = document.querySelectorAll("select");
 
-
-
-
-
 selector.forEach(element => {
     for (const languages_code in languages) {
        
@@ -11,15 +7,13 @@ selector.forEach(element => {
        element.insertAdjacentHTML("beforeend",options)
     }
  
-    // body += `<option value="si-LK">Sinhala</option>`
+
 });
-
-
 
 function translate1() {
     let textInput = document.getElementById("inputText").value;
-    let inputLang =selector[0].value;
-    let transLang =selector[1].value;
+    let inputLang =document.getElementById("dropdown1").value;
+    let transLang =document.getElementById("dropdown2").value;
 
     console.log(textInput);
 
