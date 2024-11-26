@@ -25,8 +25,8 @@ function post(textInput, inputLang, transLang) {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    const apiUrl = `https://api.mymemory.translated.net/get?q=${textInput}&langpair=${inputLang}|${transLang}`;
-    fetch(apiUrl)
+
+    fetch(`https://api.mymemory.translated.net/get?q=${textInput}&langpair=${inputLang}|${transLang}`)
         .then((response) => response.json())
         .then((result) => {
             console.log(result);
@@ -37,11 +37,7 @@ function post(textInput, inputLang, transLang) {
 
             resultText.innerHTML = res;
         })
-        .catch((error) => {
-            console.error("Error:", error);
-            document.getElementById("translateText").innerHTML = "Translation failed.";
-        });
-
+       
 }
 
 
