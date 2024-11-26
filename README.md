@@ -2,7 +2,7 @@
 
 A simple and intuitive Translator App that enables seamless language translations using **JavaScript**, **HTML**, **Bootstrap CSS**, and the **Google Translator API**.  
 
-![App Screenshot](path/to/your/screenshot.png)  
+![App Screenshot](https://github.com/RameshEdirisinghe/Wardly-Translator/blob/d9ddc421fff56d9846c0eda768882fd75bb554f6/Screenshot%202024-11-27%20013335.png)  
 
 Features  
 - **Instant Language Translations**  
