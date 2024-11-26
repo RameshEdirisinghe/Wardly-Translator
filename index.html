@@ -59,6 +59,20 @@
     box-sizing: border-box;
   }
 
+/* Emoji Icon as Button */
+.emoji-icon {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #999;
+    }
+
+    .emoji-icon:hover {
+      color: #007bff;
+    }
+
   .text-area:focus {
     border-color: #454d4684;
     box-shadow: 5px 5px 5px rgba(57, 123, 63, 0.758);
@@ -116,8 +130,12 @@
   <div class="body">
     <div class="translator-container ">
       <p class="head">WordLy ></p>
+      
       <div class="text-area-container">
-        <textarea class="text-area" placeholder="Enter text here..." id="inputText"></textarea>
+        <textarea class="text-area" placeholder="Enter text here..." id="inputText">
+          
+        </textarea>
+        <span class="emoji-icon" onclick="speakText('translateText')">&#128362;</span>
 
       </div>
       <div class="dropdown-container">
@@ -127,6 +145,7 @@
       <div class="text-area-container">
         <textarea class="text-area" placeholder="Translation will appear here..." id="translateText"
           readonly></textarea>
+          <span class="emoji-icon" onclick="speakText('translateText')">&#128362;</span>
 
       </div>
       <button class="translate-button" onclick="translate1()">Translate</button>
